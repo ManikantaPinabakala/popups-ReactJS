@@ -1,0 +1,31 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-image {
+  width: 70%;
+}
+
+.small-image {
+  width: 80%;
+}
+
+@media screen and (max-width: 767px) {
+  .large-image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .small-image {
+    display: none;
+  }
+}
